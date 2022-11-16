@@ -29,6 +29,7 @@ ul a {
     align-items: center;
     font-size: 28px;
     color: var(--color3);
+    transition: all .3s;
 }
 ul a:hover{
     color: var(--color1);
