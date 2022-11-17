@@ -4,3 +4,7 @@
     --color3: #497174;
     --color4: #EB6440;
 }
+::selection {
+    background-color: var(--color4);
+    color: var(--color1);
+}

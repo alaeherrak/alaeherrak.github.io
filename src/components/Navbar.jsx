@@ -2,7 +2,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "../assets/navbar.css";
 
 const Navbar = () => {
-  const headerLogo = "< ALAE HERRAK />";
+  const headerLogo = "< AH />";
 
   return (
     <header>
