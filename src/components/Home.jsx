@@ -8,7 +8,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-links">
-        <SideLink link="https://www.github.com/alae-herrak" logo={GitHubLogo} />
+        <SideLink 
+          link="https://www.github.com/alae-herrak" 
+          logo={GitHubLogo} 
+        />
         <SideLink
           link="https://www.linkedin.com/in/alae-herrak-ba9039210"
           logo={LinkedinLogo}
