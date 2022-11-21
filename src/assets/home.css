@@ -14,4 +14,11 @@
   height: 100%;
   width: 100%;
   backdrop-filter: blur(2px);
+  display: flex;
+}
+.hero-container-left {
+  flex: 1;
+}
+.hero-container-right {
+  flex: 1;
 }
