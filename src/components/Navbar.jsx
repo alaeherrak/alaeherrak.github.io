@@ -1,22 +1,21 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "../assets/navbar.css";
+import Logo from "./Logo";
 
 const Navbar = () => {
-  const headerLogo = "< AH />";
-
   return (
     <header>
-      <div className="header-logo">{headerLogo}</div>
+      <Logo />
       <nav>
         <ul>
           <li>
             <CustomLink to="/">Home</CustomLink>
           </li>
           <li>
-            <CustomLink to="/about">About</CustomLink>
+            <CustomLink to="/projects">Projects</CustomLink>
           </li>
           <li>
-            <CustomLink to="/projects">Projects</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
           </li>
           <li>
             <CustomLink to="/contact">Contact</CustomLink>
@@ -29,7 +28,7 @@ const Navbar = () => {
 
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({path: resolvedPath.pathname, end: true})
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
     <Link to={to} className={isActive ? "active" : ""} {...props}>

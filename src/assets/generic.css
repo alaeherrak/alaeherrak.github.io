@@ -8,3 +8,6 @@
     background-color: var(--color4);
     color: var(--color1);
 }
+* {
+    box-sizing: border-box;
+}
