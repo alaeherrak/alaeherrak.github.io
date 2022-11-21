@@ -2,7 +2,7 @@ import '../assets/logo.css'
 
 const Logo = () => {
   return (
-    <div>
+    <div className='logo'>
         <span className='span1'>{'< '}</span> 
         <span className='span2'>A</span>
         <span className='span3'>A</span>

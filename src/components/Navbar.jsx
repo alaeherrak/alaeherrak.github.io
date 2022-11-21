@@ -1,12 +1,24 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { useState } from "react";
 import "../assets/navbar.css";
 import Logo from "./Logo";
+import MenuOpen from "../assets/images/menuOpen.png";
+import MenuClose from "../assets/images/menuClose.png";
 
 const Navbar = () => {
+  const [menuToggle, setMenuToggle] = useState(MenuOpen);
+
+  const handleMenuToggle = () => {
+    menuToggle === MenuOpen
+      ? setMenuToggle(MenuClose)
+      : setMenuToggle(MenuOpen);
+  };
+
   return (
     <header>
       <Logo />
-      <nav>
+      <img className="toggle-button" src={menuToggle} alt="menuOpen" onClick={handleMenuToggle} />
+      <nav className={menuToggle === MenuOpen ? '':'active'}>
         <ul>
           <li>
             <CustomLink to="/">Home</CustomLink>
