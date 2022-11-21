@@ -1,1 +1,17 @@
 @import "generic.css";
+
+.home {
+  margin-top: 60.8px;
+  width: 100%;
+}
+.hero {
+  height: calc(100vh - 60.8px);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero-container {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
