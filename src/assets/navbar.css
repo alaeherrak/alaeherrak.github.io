@@ -1,11 +1,15 @@
 @import "generic.css";
 
 header {
+    position: fixed;
+    width: 100%;
+}
+.header {
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #e0e0e0;
+  background-color: white;
 }
 .logo {
   padding: 0 2rem;
@@ -25,11 +29,15 @@ nav li {
 nav li a {
   display: block;
   text-decoration: none;
+  font-size: 1.2rem;
   color: #333;
   padding: 1rem;
 }
 nav li:hover {
   background-color: var(--color1);
+}
+nav li a:hover {
+    color: var(--color4);
 }
 .toggle-button {
     position: absolute;
@@ -39,9 +47,11 @@ nav li:hover {
     width: 40px;
     height: 40px;
 }
-
+.active-link {
+    color: var(--color4);
+}
 @media (max-width: 560px){
-    header {
+    .header {
         flex-direction: column;
         align-items: flex-start;
     }

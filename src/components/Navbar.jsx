@@ -16,24 +16,31 @@ const Navbar = () => {
 
   return (
     <header>
-      <Logo />
-      <img className="toggle-button" src={menuToggle} alt="menuOpen" onClick={handleMenuToggle} />
-      <nav className={menuToggle === MenuOpen ? '':'active'}>
-        <ul>
-          <li>
-            <CustomLink to="/">Home</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/projects">Projects</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/about">About</CustomLink>
-          </li>
-          <li>
-            <CustomLink to="/contact">Contact</CustomLink>
-          </li>
-        </ul>
-      </nav>
+      <div className="header">
+        <Logo />
+        <img
+          className="toggle-button"
+          src={menuToggle}
+          alt="menuOpen"
+          onClick={handleMenuToggle}
+        />
+        <nav className={menuToggle === MenuOpen ? "" : "active"}>
+          <ul>
+            <li>
+              <CustomLink to="/" onClick={handleMenuToggle}>Home</CustomLink>
+            </li>
+            <li>
+              <CustomLink to="/projects" onClick={handleMenuToggle}>Projects</CustomLink>
+            </li>
+            <li>
+              <CustomLink to="/about" onClick={handleMenuToggle}>About</CustomLink>
+            </li>
+            <li>
+              <CustomLink to="/contact" onClick={handleMenuToggle}>Contact</CustomLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
@@ -43,7 +50,7 @@ function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
-    <Link to={to} className={isActive ? "active" : ""} {...props}>
+    <Link to={to} className={isActive ? "active-link" : ""} {...props}>
       {children}
     </Link>
   );
