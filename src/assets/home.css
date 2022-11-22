@@ -81,3 +81,9 @@
 .popupHide {
   display: none;
 }
+
+@media (max-width: 570px){
+  .home {
+    margin-top: 52.8px;
+  }
+}
