@@ -70,21 +70,17 @@ const Home = () => {
               </a>
             </div>
             <div className="hero-container-right-main">
-              <div className="right-heading">
-                <img src={QuickAction} alt="quick action" width="50px" /> Quick
-                Actions
-              </div>
-              <div className="right-action">
-                <Link to="/projects">
-                  View my projects{" "}
-                  <img src={RightArrow} alt="right arrow" width="35px" />
-                </Link>
-              </div>
-              <div className="right-action">
-                <Link to="/contact">
-                  Contact me{" "}
-                  <img src={RightArrow} alt="right arrow" width="35px" />
-                </Link>
+              <div className="window-head">Terminal</div>
+              <div className="window-body">
+                <div>C:\users\alae\projects> cd desktop</div>
+                <div>C:\users\alae\desktop> cd projects</div>
+                <div>C:\users\alae\desktop\projects> cd portfolio</div>
+                <div>C:\users\alae\desktop\projects\portfolio> dir</div>
+                <div><Link to='/'>- home</Link></div>
+                <div><Link to='/projects'>- projects</Link></div>
+                <div><Link to='/about'>- about</Link></div>
+                <div><Link to='/contact'>- contact</Link></div>
+                <div>C:\users\alae\desktop\projects\portfolio> <span className="underscore">_</span></div>
               </div>
             </div>
           </div>
