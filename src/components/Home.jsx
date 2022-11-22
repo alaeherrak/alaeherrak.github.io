@@ -69,10 +69,11 @@ const Home = () => {
                 <img src={Linkedin} alt="linkedin" width="70px" />
               </a>
             </div>
+            {/* big screen */}
             <div className="hero-container-right-main">
               <div className="window-head">Terminal</div>
               <div className="window-body">
-                <div>C:\users\alae\projects> cd desktop</div>
+                <div>C:\users\alae\> cd desktop</div>
                 <div>C:\users\alae\desktop> cd projects</div>
                 <div>C:\users\alae\desktop\projects> cd portfolio</div>
                 <div>C:\users\alae\desktop\projects\portfolio> dir</div>
@@ -82,6 +83,12 @@ const Home = () => {
                 <div><Link to='/contact'>- contact</Link></div>
                 <div>C:\users\alae\desktop\projects\portfolio> <span className="underscore">_</span></div>
               </div>
+            </div>
+            {/* mobile */}
+            <div className="hero-container-right-mobile">
+                <div className="mobile-heading">
+                    <img src={QuickAction} alt="" width='50px'/>  
+                </div>
             </div>
           </div>
         </div>

@@ -173,6 +173,10 @@
   }
 }
 
+.hero-container-right-mobile {
+  display: none;
+}
+
 @media (max-width: 1500px) {
   .hero-container-right .links {
     position: absolute;
@@ -210,6 +214,9 @@
   }
   .hero-container-right-main {
     display: none;
+  }
+  .hero-container-right-mobile {
+    display: flex;
   }
 }
 @media (max-width: 570px) {
