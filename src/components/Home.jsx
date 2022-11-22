@@ -73,16 +73,22 @@ const Home = () => {
             <div className="hero-container-right-main">
               <div className="window-head">Terminal</div>
               <div className="window-body">
-                <div>C:\users\alae\> cd desktop</div>
-                <div>C:\users\alae\desktop> cd projects</div>
-                <div>C:\users\alae\desktop\projects> cd portfolio</div>
-                <div>C:\users\alae\desktop\projects\portfolio> dir</div>
+                <div>C:\users\alae\{">"} cd desktop</div>
+                <div>C:\users\alae\desktop{">"} cd projects</div>
+                <div>C:\users\alae\desktop\projects{">"} cd portfolio</div>
+                <div>C:\users\alae\desktop\projects\portfolio{">"} dir</div>
                 <div><Link to='/'>- home</Link></div>
                 <div><Link to='/projects'>- projects</Link></div>
                 <div><Link to='/about'>- about</Link></div>
                 <div><Link to='/contact'>- contact</Link></div>
-                <div>C:\users\alae\desktop\projects\portfolio> <span className="underscore">_</span></div>
+                <div>C:\users\alae\desktop\projects\portfolio{">"} <span className="underscore">_</span></div>
               </div>
+            </div>
+            {/* tabler */}
+            <div className="hero-container-right-tablet">
+                <div className="tablet-container">
+                    <pre>{'const PERSON = {\n    fullName: "alae herrak",\n    skills: {\n        frontEnd: true,\n        backEnd: true\n    };\n};'}</pre><pre>{'const PORTFOLIO = {\n    directory: [\n        '}<Link to='/'>home</Link>{',\n        '}<Link to='/projects'>projects</Link>{',\n        '}<Link to='/about'>about</Link>{',\n        '}<Link to='/contact'>contact</Link>{'\n    ]\n}'}</pre> 
+                </div>
             </div>
             {/* mobile */}
             <div className="hero-container-right-mobile">
