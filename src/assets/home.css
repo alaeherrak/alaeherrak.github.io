@@ -8,7 +8,7 @@
   height: calc(100vh - 60.8px);
   width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .hero-container {
   height: 100%;
@@ -98,12 +98,43 @@
   display: none;
 }
 
+/* right side */
+.hero-container-right {
+  position: relative;
+}
+.hero-container-right .links {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+}
+.hero-container-right .links a {
+  transition: all 0.3s;
+  border: 1px solid #00000000;
+}
+.hero-container-right .links a:hover {
+  border: 1px dashed #000000;
+  border-radius: 10px;
+  background-color: #e99f00;
+}
+
 @media (max-width: 570px) {
   .home {
     margin-top: 52.8px;
   }
   .hero {
     height: calc(100vh - 52.8px);
+  }
+  .hero-container-left {
+    padding: 1rem;
+  }
+  .fullname,
+  .skills {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 1148px) {
