@@ -101,6 +101,9 @@
 /* right side */
 .hero-container-right {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-container-right .links {
   position: absolute;
@@ -121,6 +124,29 @@
   border-radius: 10px;
   background-color: #e99f00;
 }
+.hero-container-right-main {
+  background-color: #aaaaaab2;
+  backdrop-filter: blur(3px);
+  height: 400px;
+  width: 350px;
+  border-radius: 15px;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.32);
+}
+.right-heading {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: underline #ffce63;
+}
+
+
 
 @media (max-width: 570px) {
   .home {
@@ -140,5 +166,17 @@
 @media (max-width: 1148px) {
   .hero-container {
     flex-direction: column;
+  }
+  .hero-container-right .links {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: 0 0;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: center;
   }
 }
