@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/home.css";
-import Laptop from "../assets/images/lightbulbs.jpg";
+import LightBulbs from "../assets/images/lightbulbs.jpg";
 
 const Home = () => {
   const [fullnamePopup, setFullnamePopup] = useState("popupHide");
@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <section className="hero" style={{ background: `url(${Laptop})` }}>
+      <section className="hero" style={{ background: `url(${LightBulbs})` }}>
         <div className="hero-container">
           <div className="hero-container-left">
             <div className="hero-container-left-container">

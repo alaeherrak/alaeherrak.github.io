@@ -75,7 +75,7 @@ nav li a:hover {
         display: block;
     }
 }
-@media (min-width: 1048px){
+@media (min-width: 1148px){
     .logo {
         padding: 0 4rem;
     }
