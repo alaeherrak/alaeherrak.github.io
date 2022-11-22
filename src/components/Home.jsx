@@ -86,8 +86,8 @@ const Home = () => {
             </div>
             {/* mobile */}
             <div className="hero-container-right-mobile">
-                <div className="mobile-heading">
-                    <img src={QuickAction} alt="" width='50px'/>  
+                <div className="mobile-container">
+                    <pre>{'const PERSON = {\n    fullName: "alae herrak",\n    skills: {\n        frontEnd: true,\n        backEnd: true\n    };\n};\nconst PORTFOLIO = {\n    directory: [\n        '}<Link to='/'>home</Link>{',\n        '}<Link to='/projects'>projects</Link>{',\n        '}<Link to='/about'>about</Link>{',\n        '}<Link to='/contact'>contact</Link>{'\n    ]\n}'}</pre> 
                 </div>
             </div>
           </div>
