@@ -40,7 +40,7 @@ const Home = () => {
                   onMouseOver={handleFullnamePopupOver}
                   onMouseOut={handleFullnamePopupOut}
                 >
-                  Hi, I'm <span>Herrak</span>,
+                  Hi, I'm <span>Alae</span>,
                 </h1>
                 <h3
                   onMouseOver={handleSkillsPopupOver}
