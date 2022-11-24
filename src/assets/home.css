@@ -231,14 +231,22 @@
   .hero-container-right-tablet pre {
     display: inline-block;
     height: 200px;
-    margin: 0;
+    width: 256px;
+    margin: 0 0.5rem;
     padding: 10px 20px;
-    margin: 0 2rem;
     background-color: #d8d8d825;
     border-radius: 10px;
   }
+  .fullname,
+  .skills {
+    display: none;
+  }
 }
 @media (max-width: 570px) {
+  .hero-container-left-container h1:hover,
+  .hero-container-left-container h3:hover {
+    letter-spacing: 0;
+  }
   .hero-container-right-tablet {
     display: none;
   }
